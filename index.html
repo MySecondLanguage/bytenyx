@@ -2,736 +2,898 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="_oi3sf9otEeIqZkH4BJX55IPcj9r4waqM1SYk3VeRaU" />
-    <title>HyperHelios</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="_oi3sf9otEeIqZkH4BJX55IPcj9r4waqM1SYk3VeRaU" />
+  <title>HyperHelios</title>
 
-    <!-- Bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!-- bootstrap icon cdn-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- bootstrap icon cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <!-- favicon cdn-->
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+  <!-- favicon cdn-->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
 
-    <!-- font awesome cdn-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+  <!-- font awesome cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- library (animate.css) -->
-    <link rel="stylesheet" href="css/animate.css">
-    
-    
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJX0KPKWLT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- library (animate.css) -->
+  <link rel="stylesheet" href="css/animate.css">
 
-  gtag('config', 'G-ZJX0KPKWLT');
-</script>
-    
-    
-    
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJX0KPKWLT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZJX0KPKWLT');
+  </script>
+
+
+
 </head>
 
 <body>
-    <header>
-        <!-- navbar start -->
-        <nav id="header" class="headroom navbar-fixed-top">
-            <div class="startp-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-between">
-                        <div>
-                            <a class="navbar-brand">
-                                <img src="/images/h2logo.svg" alt="logo" />
-                            </a>
-                        </div>
+  <header>
+    <!-- navbar start -->
+    <nav id="header" class="headroom navbar-fixed-top">
+      <div class="startp-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-between">
+            <div>
+              <a href="#" class="navbar-brand">
+                <img src="/images/h2logo.svg" alt="logo" />
+              </a>
+            </div>
 
-                        <div class="d-flex">
-                            <div>
-                                <button class='classTwo' id="classTwo" type="button">
-                                    <i class="fas fa-bars" style="font-size: 30px"></i>
-                                </button>
-                            </div>
+            <div class="d-flex">
+              <div>
+                <button class='classTwo' id="classTwo" type="button">
+                  <i class="fas fa-bars" style="font-size: 30px"></i>
+                </button>
+              </div>
 
-                            <div class='classOne navbar-collapse' id="classOne">
-                                <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link">
-                                            Services
-                                            <!-- <i class="bi bi-chevron-down"></i> -->
-                                        </a>
+              <div class='classOne navbar-collapse' id="classOne">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#our-service" class="nav-link">Services</a>
+                  </li>
 
-                                        <!-- <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link">IT Startup</a>
-                                            </li>
+                  <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                  </li>
 
-                                            <li class="nav-item">
-                                                <a class="nav-link">IT Startup Two</a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link">IOT</a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link">Hosting</a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link">Machine Learning</a>
-                                            </li>
-                                        </ul> -->
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link">
-                                            Product
-                                            <!-- <i class="bi bi-chevron-down"></i> -->
-                                        </a>
-
-                                        <!-- <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link">About Style 1</a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link">About Style 2</a>
-                                            </li>
-                                        </ul> -->
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link">Solution</a>
-                                    </li>
+                  <li class="nav-item">
+                    <a href="/pages/about-us.html" class="nav-link">About Us</a>
+                  </li>
 
 
-                                    <li class="nav-item">
-                                        <a class="nav-link">About</a>
-                                    </li>
-                                </ul>
-                            </div>
+                  <li class="nav-item">
+                    <a href="#teams" class="nav-link">Team</a>
+                  </li>
+                </ul>
+              </div>
 
-                            <div class="others-option">
-                                <a class="btn btn-light">Support</a>
-                            </div>
-                        </div>
-                    </nav>
+              <div class="others-option">
+                <a href="/pages/contact-us.html" class="btn btn-light">Contact Us</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+  </header>
+
+  <main>
+    <!-- main-banner start -->
+    <section class="main-banner">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="col-lg-5">
+                <div class="hero-content">
+                  <h1>We <span class="react">React</span> to every <span class="python">Python</span>ic response !</h1>
+                  <p>The best <span class="react bg">React</span> and <span class="django bg">Django</span> Developer
+                    Team on entire Solar System and Beyond</p>
+                  <a class="btn btn-primary">Get Started</a>
                 </div>
-            </div>
-        </nav>
+              </div>
 
-        <!-- navbar end -->
-    </header>
+              <div class="col-lg-6 offset-lg-1">
+                <div class="banner-image">
+                  <img src='/images/banner-image/man.png'
+                    class="animate__animated animate__fadeInDown animate__delay-0.1s" alt="man" />
 
-    <main>
-        <!-- main-banner start -->
-        <section class="main-banner">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="container">
-                        <div class="row h-100 justify-content-center align-items-center">
-                            <div class="col-lg-5">
-                                <div class="hero-content">
-                                    <h1>We <span class="react">React</span> to every <span
-                                            class="python">Python</span>ic response !</h1>
-                                    <p>The best <span class="react bg">React</span> and <span
-                                            class="django bg">Django</span> Developer Team on entire Solar System
-                                        and
-                                        Beyond</p>
+                  <img src="/images/banner-image/code.png"
+                    class="animate__animated animate__fadeInUp animate__delay-0.1s" alt="code" />
 
-                                    <a class="btn btn-primary">Get Started</a>
-                                </div>
-                            </div>
+                  <img src="/images/banner-image/carpet.png"
+                    class="animate__animated animate__fadeInLeft animate__delay-0.1s" alt="carpet" />
 
-                            <div class="col-lg-6 offset-lg-1">
-                                <div class="banner-image">
-                                    <img src='/images/banner-image/man.png'
-                                        class="animate__animated animate__fadeInDown animate__delay-0.1s" alt="man" />
+                  <img src="/images/banner-image/bin.png" class="animate__animated animate__zoomIn animate__delay-0.1s"
+                    alt="bin" />
 
-                                    <img src="/images/banner-image/code.png"
-                                        class="animate__animated animate__fadeInUp animate__delay-0.1s" alt="code" />
+                  <img src="/images/banner-image/book.png"
+                    class="animate__animated animate__bounceIn animate__delay-0.1s" alt="book" />
 
-                                    <img src="/images/banner-image/carpet.png"
-                                        class="animate__animated animate__fadeInLeft animate__delay-0.1s"
-                                        alt="carpet" />
+                  <img src="/images/banner-image/dekstop.png"
+                    class="animate__animated animate__fadeInDown animate__delay-0.1s" alt="dekstop" />
 
-                                    <img src="/images/banner-image/bin.png"
-                                        class="animate__animated animate__zoomIn animate__delay-0.1s" alt="bin" />
+                  <img src="/images/banner-image/dot.png" class="animate__animated animate__zoomIn animate__delay-0.1s"
+                    alt="dot" />
 
-                                    <img src="/images/banner-image/book.png"
-                                        class="animate__animated animate__bounceIn animate__delay-0.1s" alt="book" />
+                  <img src="/images/banner-image/flower-top-big.png"
+                    class="animate__animated animate__fadeInUp animate__delay-0.1s" alt="flower-top-big" />
 
-                                    <img src="/images/banner-image/dekstop.png"
-                                        class="animate__animated animate__fadeInDown animate__delay-0.1s"
-                                        alt="dekstop" />
+                  <img src="/images/banner-image/flower-top.png"
+                    class="animate__animated animate__rotateIn animate__delay-0.1s" alt="flower-top" />
 
-                                    <img src="/images/banner-image/dot.png"
-                                        class="animate__animated animate__zoomIn animate__delay-0.1s" alt="dot" />
+                  <img src="/images/banner-image/keyboard.png"
+                    class="animate__animated animate__fadeInUp animate__delay-0.1s" alt="keyboard" />
 
-                                    <img src="/images/banner-image/flower-top-big.png"
-                                        class="animate__animated animate__fadeInUp animate__delay-0.1s"
-                                        alt="flower-top-big" />
+                  <img src="/images/banner-image/pen.png" class="animate__animated animate__zoomIn animate__delay-0.1s"
+                    alt="pen" />
 
-                                    <img src="/images/banner-image/flower-top.png"
-                                        class="animate__animated animate__rotateIn animate__delay-0.1s"
-                                        alt="flower-top" />
+                  <img src="/images/banner-image/table.png"
+                    class="animate__animated animate__zoomIn animate__delay-0.1s" alt="table" />
 
-                                    <img src="/images/banner-image/keyboard.png"
-                                        class="animate__animated animate__fadeInUp animate__delay-0.1s"
-                                        alt="keyboard" />
+                  <img src="/images/banner-image/tea-cup.png"
+                    class="animate__animated animate__fadeInLeft animate__delay-0.1s" alt="tea-cup" />
 
-                                    <img src="/images/banner-image/pen.png"
-                                        class="animate__animated animate__zoomIn animate__delay-0.1s" alt="pen" />
+                  <img src="/images/banner-image/headphone.png"
+                    class="animate__animated animate__rollIn animate__delay-0.1" alt="headphone" />
 
-                                    <img src="/images/banner-image/table.png"
-                                        class="animate__animated animate__zoomIn animate__delay-0.1s" alt="table" />
-
-                                    <img src="/images/banner-image/tea-cup.png"
-                                        class="animate__animated animate__fadeInLeft animate__delay-0.1s"
-                                        alt="tea-cup" />
-
-                                    <img src="/images/banner-image/headphone.png"
-                                        class="animate__animated animate__rollIn animate__delay-0.1" alt="headphone" />
-
-                                    <img src="/images/banner-image/main-pic.png"
-                                        class="animate__animated animate__fadeInUp animate__delay-0.1 img-fluid"
-                                        alt="main-pic" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <img src="/images/banner-image/main-pic.png"
+                    class="animate__animated animate__fadeInUp animate__delay-0.1 img-fluid" alt="main-pic" />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shape Images -->
+      <div class="shape1">
+        <img src="/images/shape1.png" alt="shape" />
+      </div>
+      <div class="shape2 rotateme">
+        <img src="/images/shape2.svg" alt="shape" />
+      </div>
+      <div class="shape3">
+        <img src="/images/shape3.svg" alt="shape" />
+      </div>
+      <div class="shape4">
+        <img src="/images/shape4.svg" alt="shape" />
+      </div>
+      <div class="shape5">
+        <img src="/images/shape5.png" alt="shape" />
+      </div>
+      <div class="shape6 rotateme">
+        <img src="/images/shape4.svg" alt="shape" />
+      </div>
+      <div class="shape7">
+        <img src="/images/shape4.svg" alt="shape" />
+      </div>
+      <div class="shape8 rotateme">
+        <img src="/images/shape2.svg" alt="shape" />
+      </div>
+    </section>
+    <!-- main-banner end -->
+
+    <!-- services-area start -->
+    <section>
+      <div class="services-area">
+        <div class="container">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 services-left-image">
+              <img src="/images/services-left-image/big-monitor.png"
+                class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="big-monitor" />
+
+              <img src="/images/services-left-image/creative.png"
+                class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="creative" />
+
+              <img src="/images/services-left-image/developer.png"
+                class="animate__animated animate__fadeInLeft animate__delay-0.2s" alt="developer" />
+
+              <img src="/images/services-left-image/flower-top.png"
+                class="animate__animated animate__fadeInLeft animate__delay-0.2s" data-wow-delay="0.6s"
+                alt="flower-top" />
+
+              <img src="/images/services-left-image/small-monitor.png"
+                class="animate__animated animate__bounceIn animate__delay-0.2s" alt="small-monitor" />
+
+              <img src="/images/services-left-image/small-top.png"
+                class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="small-top" />
+
+              <img src="/images/services-left-image/table.png"
+                class="animate__animated animate__zoomIn animate__delay-0.2s" alt="table" />
+
+              <img src="/images/services-left-image/target.png"
+                class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="target" />
+
+              <img src="/images/services-left-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
+
+              <img src="/images/services-left-image/service-left-main-pic.png"
+                class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="main-pic" />
             </div>
 
-            <!-- Shape Images -->
-            <div class="shape1">
-                <img src="/images/shape1.png" alt="shape" />
-            </div>
-            <div class="shape2 rotateme">
-                <img src="/images/shape2.svg" alt="shape" />
-            </div>
-            <div class="shape3">
-                <img src="/images/shape3.svg" alt="shape" />
-            </div>
-            <div class="shape4">
-                <img src="/images/shape4.svg" alt="shape" />
-            </div>
-            <div class="shape5">
-                <img src="/images/shape5.png" alt="shape" />
-            </div>
-            <div class="shape6 rotateme">
-                <img src="/images/shape4.svg" alt="shape" />
-            </div>
-            <div class="shape7">
-                <img src="/images/shape4.svg" alt="shape" />
-            </div>
-            <div class="shape8 rotateme">
-                <img src="/images/shape2.svg" alt="shape" />
-            </div>
-        </section>
-        <!-- main-banner end -->
+            <div class="col-lg-6 col-md-12 services-content">
+              <div class="section-title">
+                <h2>Design & Development</h2>
+                <div class="bar"></div>
+                <p>Translate ideas into reallity with experieced developer !</p>
+              </div>
 
-        <!-- services-area start -->
-        <section>
-            <div class="services-area">
-                <div class="container">
-                    <div class="row h-100 justify-content-center align-items-center">
-                        <div class="col-lg-6 col-md-12 services-left-image">
-                            <img src="/images/services-left-image/big-monitor.png"
-                                class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="big-monitor" />
-
-                            <img src="/images/services-left-image/creative.png"
-                                class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="creative" />
-
-                            <img src="/images/services-left-image/developer.png"
-                                class="animate__animated animate__fadeInLeft animate__delay-0.2s" alt="developer" />
-
-                            <img src="/images/services-left-image/flower-top.png"
-                                class="animate__animated animate__fadeInLeft animate__delay-0.2s" data-wow-delay="0.6s"
-                                alt="flower-top" />
-
-                            <img src="/images/services-left-image/small-monitor.png"
-                                class="animate__animated animate__bounceIn animate__delay-0.2s" alt="small-monitor" />
-
-                            <img src="/images/services-left-image/small-top.png"
-                                class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="small-top" />
-
-                            <img src="/images/services-left-image/table.png"
-                                class="animate__animated animate__zoomIn animate__delay-0.2s" alt="table" />
-
-                            <img src="/images/services-left-image/target.png"
-                                class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="target" />
-
-                            <img src="/images/services-left-image/cercle-shape.png" class="bg-image rotateme"
-                                alt="shape" />
-
-                            <img src="/images/services-left-image/service-left-main-pic.png"
-                                class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="main-pic" />
-                        </div>
-
-                        <div class="col-lg-6 col-md-12 services-content">
-                            <div class="section-title">
-                                <h2>Design & Development</h2>
-                                <div class="bar"></div>
-                                <p>Translate ideas into reallity with experieced developer !</p>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-columns icon-service"></i> Responsive Design
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-code icon-service"></i> React Web Development
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-code icon-service"></i> Django Web Development
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-code icon-service"></i> API Integration
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-code icon-service"></i> AWS Management
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-percent icon-service"></i> UX/UI Design
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="bi bi-cart icon-service"></i> E-commerce Development
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="box">
-                                        <i class="fa-regular fa-circle-check icon-service"></i> Payment Gateway
-                                        Integration
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- services-area end -->
-
-        <!-- our-service start -->
-        <section id="our-service" class="our-service">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Services</h2>
-                    <div class="bar"></div>
-                    <p>We provide solutions to specific problems – whether they are related to new products or upgrading
-                        existing ones.</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-columns icon-service"></i> Responsive Design
+                  </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="bi bi-gear"></i>
-                            </div>
-                            <h3>
-                                <a href="/service-details">
-                                    <a>Web Application Development</a>
-                                </a>
-                            </h3>
-                            <p>
-                                Web application development is the complex process of designing, building,
-                                testing and deploying a web-based app. When a business wants to create an online
-                                presence,
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services-box">
-                            <div class="icon bg-c679e3">
-                                <i class="bi bi-grid-3x3-gap-fill"></i>
-                            </div>
-                            <h3>
-                                <a href="/service-details">
-                                    <a>User Friendly Dashboard</a>
-                                </a>
-                            </h3>
-                            <p>
-                                A dashboard is a visual display of all of your data. It's primary intention is to
-                                provide information at-a-glance. A dashboard usually receives information from a linked
-                                database.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services-box">
-                            <div class="icon bg-eb6b3d">
-                                <i class="bi bi-bell"></i>
-                            </div>
-                            <h3>
-                                <a href="/service-details">
-                                    <a>Web Scraping</a>
-                                </a>
-                            </h3>
-                            <p>
-                                Web scraping is extracting data from websites in an automated manner. It's a
-                                programmatic analysis of a web page to download information from it.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services-box">
-                            <div class="icon bg-c679e3">
-                                <i class="bi bi-info-circle"></i>
-                            </div>
-                            <h3>
-                                <a href="/service-details">
-                                    <a>User interface (UI) design</a>
-                                </a>
-                            </h3>
-                            <p>
-                                User interface (UI) design is the process designers use to build interfaces in software
-                                or computerized devices, focusing on looks or style.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services-box">
-                            <div class="icon bg-c679e3">
-                                <i class="bi bi-hdd"></i>
-                            </div>
-                            <h3>
-                                <a href="/service-details">
-                                    <a>CMS Development</a>
-                                </a>
-                            </h3>
-                            <p>
-                                CMS is software that is used for creating, managing and editing a website even if you do
-                                not have any technical skills.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services-box">
-                            <div class="icon bg-eb6b3d">
-                                <img src="./images/send.svg" alt="">
-                            </div>
-                            <h3>
-                                <a href="/service-details">
-                                    <a>AWS Management</a>
-                                </a>
-                            </h3>
-                            <p>
-                                AWS Management Console is a web application that comprises and refers to a broad
-                                collection of service consoles for managing AWS resources.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- our-service end -->
-
-        <!-- funfacts-area start -->
-        <section class="funfacts-area">
-            <div class="container">
-                <div class="section-title">
-                    <h2>We always try to understand client expectation</h2>
-                    <div class="bar"></div>
-                    <p>Achieved a customer satisfaction rating of 98.2% in 2021, Best Developer team of 10+
-                        employees.</p>
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-code icon-service"></i> React Web Development
+                  </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-6">
-                        <div class="funfact">
-                            <h3>100+</h3>
-                            <p>Project Done</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-6">
-                        <div class="funfact">
-                            <h3>10+</h3>
-                            <p>Workers</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-6">
-                        <div class="funfact">
-                            <h3>20+</h3>
-                            <p>Contributors</p>
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-code icon-service"></i> Django Web Development
+                  </div>
                 </div>
 
-                <div class="contact-cta-box d-flex flex-sm-wrap">
-                    <div class="">
-                        <h3>Have any question about us?</h3>
-                        <p>Don't hesitate to contact us</p>
-                    </div>
-                    <div class="">
-                        <a class="btn btn-primary">Contact Us</a>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-code icon-service"></i> API Integration
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-code icon-service"></i> AWS Management
+                  </div>
                 </div>
 
-                <div class="map-bg">
-                    <img src="/images/map.png" alt="map" class="map" />
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-percent icon-service"></i> UX/UI Design
+                  </div>
                 </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="bi bi-cart icon-service"></i> E-commerce Development
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="box">
+                    <i class="fa-regular fa-circle-check icon-service"></i> Payment Gateway
+                    Integration
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- funfacts-area end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services-area end -->
+
+    <!-- our-service start -->
+    <section id="our-service" class="our-service">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <div class="bar"></div>
+          <p>We provide solutions to specific problems – whether they are related to new products or upgrading
+            existing ones.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-services-box">
+              <div class="icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>
+                <a href="/service-details">
+                  <a>Web Application Development</a>
+                </a>
+              </h3>
+              <p>
+                Web application development is the complex process of designing, building,
+                testing and deploying a web-based app. When a business wants to create an online presence,
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-services-box">
+              <div class="icon bg-c679e3">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+              </div>
+              <h3>
+                <a href="/service-details">
+                  <a>User Friendly Dashboard</a>
+                </a>
+              </h3>
+              <p>
+                A dashboard is a visual display of all of your data. It's primary intention is to
+                provide information at-a-glance. A dashboard usually receives information from a linked
+                database.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-services-box">
+              <div class="icon bg-eb6b3d">
+                <i class="bi bi-bell"></i>
+              </div>
+              <h3>
+                <a href="/service-details">
+                  <a>Web Scraping</a>
+                </a>
+              </h3>
+              <p>
+                Web scraping is extracting data from websites in an automated manner. It's a
+                programmatic analysis of a web page to download information from it.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-services-box">
+              <div class="icon bg-c679e3">
+                <i class="bi bi-info-circle"></i>
+              </div>
+              <h3>
+                <a href="/service-details">
+                  <a>User interface (UI) design</a>
+                </a>
+              </h3>
+              <p>
+                User interface (UI) design is the process designers use to build interfaces in software
+                or computerized devices, focusing on looks or style.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-services-box">
+              <div class="icon bg-c679e3">
+                <i class="bi bi-hdd"></i>
+              </div>
+              <h3>
+                <a href="/service-details">
+                  <a>CMS Development</a>
+                </a>
+              </h3>
+              <p>
+                CMS is software that is used for creating, managing and editing a website even if you do
+                not have any technical skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-services-box">
+              <div class="icon bg-eb6b3d">
+                <img src="./images/send.svg" alt="">
+              </div>
+              <h3>
+                <a href="/service-details">
+                  <a>AWS Management</a>
+                </a>
+              </h3>
+              <p>
+                AWS Management Console is a web application that comprises and refers to a broad
+                collection of service consoles for managing AWS resources.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- our-service end -->
 
 
-        <!-- partner section start -->
-        <section class="partner">
-            <div class="ready-to-talk">
-                <div class="container">
-                    <h3>Ready to talk?</h3>
-                    <p>Believe us, we create stories with our partners day and night</p>
+    <!-- teams start -->
+    <section id="teams" class="teams">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Awesome Team</h2>
+          <div class="bar"></div>
+          <p>Alone we can do so little, together we can do so much.</p>
+        </div>
+      </div>
+      <div class="owl-carousel">
 
-                    <a class="btn btn-primary">Contact Us</a>
+
+        <div class="single-team">
+          <div class="team-image">
+            <img width="131px" height="131px" src="/images/team/anamul.jpeg" alt="image" />
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Anamul Haque</h3>
+              <span>Backend Developer</span>
+            </div>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="/images/team/social-icon/facebook.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img src="/images/team/social-icon/twitter.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <img src="/images/team/social-icon/linkedin.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/" target="_blank">
+                  <img src="/images/team/social-icon/github.svg" alt="">
+                </a>
+              </li>
+            </ul>
+            <!-- <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p> -->
+          </div>
+        </div>
+        <div class="single-team">
+          <div class="team-image">
+            <img width="131px" height="131px" src="/images/team/mominur.jpg" alt="image" />
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Mominur Rahman</h3>
+              <span>Frontend Developer</span>
+            </div>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="/images/team/social-icon/facebook.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img src="/images/team/social-icon/twitter.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <img src="/images/team/social-icon/linkedin.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/" target="_blank">
+                  <img src="/images/team/social-icon/github.svg" alt="">
+                </a>
+              </li>
+            </ul>
+            <!-- <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p> -->
+          </div>
+        </div>
+        <div class="single-team">
+          <div class="team-image">
+            <img width="131px" height="131px" src="/images/team/default-user.png" alt="image" />
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Rasel Hossain</h3>
+              <span>Mobile Application Developer</span>
+            </div>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="/images/team/social-icon/facebook.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img src="/images/team/social-icon/twitter.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <img src="/images/team/social-icon/linkedin.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/" target="_blank">
+                  <img src="/images/team/social-icon/github.svg" alt="">
+                </a>
+              </li>
+            </ul>
+            <!-- <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- teams end -->
+
+
+
+    <!-- recent works -->
+    <!-- <section id="projects" class="works-area pt-80 pb-50 bg-f7fafd">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Recent Works</h2>
+          <div class="bar"></div>
+          <p>A task is not done until it is done.</p>
+        </div>
+      </div>
+      <div class="owl-carousel">
+        <div class="single-works">
+          <img src="/images/works/grab-grants.png" alt="image" />
+
+          <a href="#">
+            <a class="icon">
+              <img src="/images/settings.svg" alt="">
+            </a>
+          </a>
+
+          <div class="works-content">
+            <h3>
+              <a href="#!">
+                <a target="_blank" href="https://grabgrants.com/">Grab Grants</a>
+              </a>
+            </h3>
+            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="single-works">
+          <img src="/images/works/lot-net.png" alt="image" />
+
+          <a href="#">
+            <a class="icon">
+              <img src="/images/settings.svg" alt="">
+            </a>
+          </a>
+
+          <div class="works-content">
+            <h3>
+              <a href="#!">
+                <a target="_blank" href="https://www.lot.net/">Car Search Engine</a>
+              </a>
+            </h3>
+            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="single-works">
+          <img src="/images/works/azmethod.png" alt="image" />
+
+          <a href="#">
+            <a class="icon">
+              <img src="/images/settings.svg" alt="">
+            </a>
+          </a>
+
+          <div class="works-content">
+            <h3>
+              <a href="#!">
+                <a target="_blank" href="https://mymethod.ch/">MyMethod School</a>
+              </a>
+            </h3>
+            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="single-works">
+          <img src="/images/works/million-challenge.png" alt="image" />
+
+          <a href="#">
+            <a class="icon">
+              <img src="/images/settings.svg" alt="">
+            </a>
+          </a>
+
+          <div class="works-content">
+            <h3>
+              <a href="#!">
+                <a target="_blank" href="https://million.creatorwizard.com/">Million Challenge</a>
+              </a>
+            </h3>
+            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div> -->
+    <!-- Shape Images -->
+    <!-- <div class="shape1">
+        <img src="/images/shape1.png" alt="shape" />
+      </div>
+      <div class="shape2 rotateme">
+        <img src="/images/shape2.svg" alt="shape" />
+      </div>
+      <div class="shape3">
+        <img src="/images/shape3.svg" alt="shape" />
+      </div>
+      <div class="shape4">
+        <img src="/images/shape4.svg" alt="shape" />
+      </div>
+      <div class="shape5">
+        <img src="/images/shape5.png" alt="shape" />
+      </div>
+      <div class="shape6 rotateme">
+        <img src="/images/shape4.svg" alt="shape" />
+      </div>
+      <div class="shape7">
+        <img src="/images/shape4.svg" alt="shape" />
+      </div>
+      <div class="shape8 rotateme">
+        <img src="/images/shape2.svg" alt="shape" />
+      </div>
+    </section> -->
+    <!-- end recent works -->
+
+
+    <!-- funfacts-area start -->
+    <section class="funfacts-area">
+      <div class="container">
+        <div class="section-title">
+          <h2>We always try to understand client expectation</h2>
+          <div class="bar"></div>
+          <p>Achieved a customer satisfaction rating of 98.2% in 2021, Best Developer team of 10+
+            employees.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-6">
+            <div class="funfact">
+              <h3>10+</h3>
+              <p>Project Done</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6">
+            <div class="funfact">
+              <h3>3+</h3>
+              <p>Workers</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6">
+            <div class="funfact">
+              <h3>20+</h3>
+              <p>Contributors</p>
+            </div>
+          </div>
+        </div>
+        <div class="map-bg">
+          <img src="/images/map.png" alt="map" class="map" />
+        </div>
+      </div>
+    </section>
+    <!-- funfacts-area end -->
+
+
+    <!-- partner section start -->
+    <section class="partner">
+      <div class="ready-to-talk">
+        <div class="container">
+          <h3>Have any question about us?</h3>
+          <p>Don't hesitate to contact us</p>
+
+          <a href="/pages/contact-us.html" class="btn btn-primary">Contact Us</a>
+        </div>
+
+        <div class="partner-area partner-section">
+          <div class="container">
+            <h5>We are using these technologies</h5>
+
+            <div class="partner-inner">
+              <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" target="_blank">
+                    <img width="120px" height="40px" src="/images/technology/django-logo.png" alt="partner" />
+                    <img width="120px" height="40px" src="/images/technology/django-logo-hover.png" alt="partner" />
+                  </a>
                 </div>
 
-                <div class="partner-area partner-section">
-                    <div class="container">
-                        <h5>Many businesses and organizations used our services</h5>
-
-                        <div class="partner-inner">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a href="#" target="_blank">
-                                        <img width="120px" height="40px" src="/images/technology/django-logo.png" alt="partner" />
-                                        <img width="120px" height="40px" src="/images/technology/django-logo-hover.png" alt="partner" />
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a href="#" target="_balnk">
-                                        <img width="50px" height="40px" src="/images/technology/react-logo.png" alt="partner" />
-                                        <img width="50px" height="40px" src="/images/technology/react-logo-hover.png" alt="partner" />
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a href="#" target="_balnk">
-                                        <img class="mt-3" src="/images/partner-img/partner-18.png" alt="partner" />
-                                        <img class="mt-3" src="/images/partner-img/partner-hover18.png" alt="partner" />
-                                    </a>
-                                </div>
-
-
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a href="#" target="_balnk">
-                                        <img class="mt-2" src="/images/partner-img/partner-5.png" alt="partner" />
-                                        <img class="mt-2" src="/images/partner-img/partner-hover5.png" alt="partner" />
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a href="#" target="_blank">
-                                        <img width="120px" height="40px" src="/images/technology/django-logo.png" alt="partner" />
-                                        <img width="120px" height="40px" src="/images/technology/django-logo-hover.png" alt="partner" />
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a class="react-logo" href="#" target="_balnk">
-                                        <img width="50px" height="40px" src="/images/technology/react-logo.png" alt="partner" />
-                                        <img width="50px" height="40px" src="/images/technology/react-logo-hover.png" alt="partner" />
-                                    </a>
-                                </div>
-
-                            
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a href="#" target="_blank">
-                                        <img width="120px" height="40px" src="/images/technology/django-logo.png" alt="partner" />
-                                        <img width="120px" height="40px" src="/images/technology/django-logo-hover.png" alt="partner" />
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <a class="amazon" href="#" target="_balnk">
-                                        <img class="mt-3" src="/images/partner-img/partner-18.png" alt="partner" />
-                                        <img class="mt-3" src="/images/partner-img/partner-hover18.png" alt="partner" />
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" target="_balnk">
+                    <img width="50px" height="40px" src="/images/technology/react-logo.png" alt="partner" />
+                    <img width="50px" height="40px" src="/images/technology/react-logo-hover.png" alt="partner" />
+                  </a>
                 </div>
-        </section>
-        <!-- partner section end -->
 
-        <!-- footer-area start -->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <div class="logo">
-                                <Link href="/it-startup">
-                                <a>
-                                    <img src="/images/h2logo.svg" alt="logo" />
-                                </a>
-                            </div>
-                            <p>We’re never afraid to take risks. We trust our instincts to make legendary solutions that
-                                push business forward.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget pl-5">
-                            <h3>Company</h3>
-                            <ul class="list">
-                                <li>
-                                    <a>About Us</a>
-                                </li>
-                                <li>
-                                    <a>Services</a>
-                                </li>
-                                <li>
-                                    <a>Features</a>
-                                </li>
-                                <li>
-                                    <a>Our Pricing</a>
-                                </li>
-                                <li>
-                                    <a>Latest News</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>Support</h3>
-                            <ul class="list">
-                                <li>
-                                    <a>FAQ's</a>
-                                </li>
-                                <li>
-                                    <a>Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a>Terms & Condition</a>
-                                </li>
-                                <li>
-                                    <a>Team</a>
-                                </li>
-                                <li>
-                                    <a>Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>Address</h3>
-
-                            <ul class="footer-contact-info">
-                                <li>
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    House-14, Block-B, Banasree <br /> Dhaka, Bangladesh
-                                </li>
-                            </ul>
-                            <ul class="social-links">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="facebook" target="_blank">
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" class="twitter" target="_blank">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagramcom/" class="instagram" target="_blank">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" class="linkedin" target="_blank">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12 col-md-12">
-                        <div class="copyright-area">
-                            <p>Copyright &copy; <span id="copyright">
-                                    <script>
-                                        document.getElementById('copyright').appendChild(document.createTextNode(
-                                            new Date().getFullYear()))
-                                    </script>
-                                </span> HyperHelios. All rights reserved by <a href="https://hyperhelios.com/"
-                                    target="_blank">HyperHelios</a></p>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" target="_balnk">
+                    <img class="mt-3" src="/images/partner-img/partner-18.png" alt="partner" />
+                    <img class="mt-3" src="/images/partner-img/partner-hover18.png" alt="partner" />
+                  </a>
                 </div>
+
+
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" target="_balnk">
+                    <img class="mt-2" src="/images/partner-img/partner-5.png" alt="partner" />
+                    <img class="mt-2" src="/images/partner-img/partner-hover5.png" alt="partner" />
+                  </a>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" target="_blank">
+                    <img width="120px" height="40px" src="/images/technology/django-logo.png" alt="partner" />
+                    <img width="120px" height="40px" src="/images/technology/django-logo-hover.png" alt="partner" />
+                  </a>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a class="react-logo" href="#" target="_balnk">
+                    <img width="50px" height="40px" src="/images/technology/react-logo.png" alt="partner" />
+                    <img width="50px" height="40px" src="/images/technology/react-logo-hover.png" alt="partner" />
+                  </a>
+                </div>
+
+
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" target="_blank">
+                    <img width="120px" height="40px" src="/images/technology/django-logo.png" alt="partner" />
+                    <img width="120px" height="40px" src="/images/technology/django-logo-hover.png" alt="partner" />
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                  <a class="amazon" href="#" target="_balnk">
+                    <img class="mt-3" src="/images/partner-img/partner-18.png" alt="partner" />
+                    <img class="mt-3" src="/images/partner-img/partner-hover18.png" alt="partner" />
+                  </a>
+                </div>
+
+              </div>
             </div>
+          </div>
+        </div>
+    </section>
+    <!-- partner section end -->
 
-            <img src="/images/map.png" class="map" alt="map" />
-
-            <!-- shape Images  -->
-            <div class="shape1">
-                <img src="/images/shape1.png" alt="shape" />
+    <!-- footer-area start -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <div class="logo">
+                <a>
+                  <img src="/images/h2logo.svg" alt="logo" />
+                </a>
+              </div>
+              <p>We’re never afraid to take risks. We trust our instincts to make legendary solutions that
+                push business forward.</p>
             </div>
-            <div class="shape8 rotateme">
-                <img src="/images/shape2.svg" alt="shape" />
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget pl-5">
+              <h3>Company</h3>
+              <ul class="list">
+                <li><a href="/pages/about-us.html">About Us</a></li>
+                <li><a href="#our-service">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="pages/mission-and-vission.html">Mission and Vission</a></li>
+                <!-- <li><a href="#!">Latest News</a></li> -->
+              </ul>
             </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <h3>Support</h3>
+              <ul class="list">
+                <!-- <li><a href="#!">FAQ's</a></li> -->
+                <li><a href="#!">Privacy Policy</a></li>
+                <li><a href="#!">Terms & Condition</a></li>
+                <li><a href="#teams">Team</a></li>
+                <li><a href="/pages/contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <h3>Address</h3>
+
+              <ul class="footer-contact-info">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  House-14, Block-B, Banasree <br /> Dhaka, Bangladesh
+                </li>
+              </ul>
+              <ul class="social-links">
+                <li>
+                  <a href="https://www.facebook.com/" class="facebook" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/" class="twitter" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" class="instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" class="linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12">
+            <div class="copyright-area">
+              <p>Copyright &copy; <span id="copyright">
+                  <script>
+                    document.getElementById('copyright').appendChild(document.createTextNode(
+                      new Date().getFullYear()))
+                  </script>
+                </span> HyperHelios. All rights reserved by <a href="http://hyperhelios.com/"
+                  target="_blank">HyperHelios</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="/images/map.png" class="map" alt="map" />
+
+      <!-- shape Images  -->
+      <div class="shape1">
+        <img src="/images/shape1.png" alt="shape" />
+      </div>
+      <div class="shape8 rotateme">
+        <img src="/images/shape2.svg" alt="shape" />
+      </div>
 
 
-            <button onclick="topFunction()" id="myBtn" style="display: block;">
-                <i class="fa-solid fa-arrow-up"></i>
-            </button>
-        </footer>
-        <!-- footer-area end -->
-    </main>
+      <button onclick="topFunction()" id="myBtn" style="display: block;">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+    <!-- footer-area end -->
+  </main>
 
-    <!-- jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Js bootstrap cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-        </script>
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- owl carousel -->
+  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+  <!-- smooth scroll -->
+  <script src="js/smooth-scroll.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 100,
+      offset: 90,
+    });
+  </script>
+  <!-- Js bootstrap cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -36,3 +36,32 @@ $(document).ready(function () {
         })
     });
 })
+
+// Owl Carousel
+$(function () {
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 3,
+        loop: true,
+        nav: false,
+        dots: false,
+        margin: 30,
+        autoplay: true,
+        smartSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            },
+            1500: {
+                items: 3
+            }
+        }
+    });
+});
+

@@ -183,6 +183,9 @@
 
     .footer-area {
         padding-top: 50px;
+        margin-top: 10px;
+    }
+    .index-footer-area {
         margin-top: 205px;
     }
 
@@ -256,16 +259,25 @@
     .startp-nav nav .classOne {
         display: none;
         width: 130vw;
-        min-height: 70vh;
+        min-height: auto;
         position: absolute;
         top: 70px;
         background: #ffffff;
         left: -30%;
         padding: 0 70% 0 30%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .startp-nav nav .classTwo {
         display: block;
+    }
+
+    .vision img {
+        display: none;
+    }
+    .vision .m-img img {
+        display: block !important;
+        margin: auto;
     }
 }
 

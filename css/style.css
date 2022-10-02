@@ -49,8 +49,8 @@ li {
     padding-bottom: 80px;
 }
 
-.pt-80 {
-    padding-top: 80px;
+.pt-140 {
+    padding-top: 140px;
 }
 
 .pb-50 {
@@ -1599,6 +1599,10 @@ textarea.form-control {
     background-color: #f7fafd;
 }
 
+.index-footer-area {
+    margin-top: 120px;
+}
+
 .footer-area .map {
     position: absolute;
     top: 0;
@@ -2022,6 +2026,8 @@ Works CSS
 .single-works {
     position: relative;
     margin-bottom: 30px;
+    flex-basis: 32% !important;
+    margin: auto;
 }
 
 .single-works::before {
@@ -2111,4 +2117,20 @@ Works CSS
     visibility: visible;
     bottom: 0;
     z-index: 5;
+}
+
+.vision .m-img img {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .single-works {
+        flex-basis: 45% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .single-works {
+        flex-basis: 95% !important;
+    }
 }

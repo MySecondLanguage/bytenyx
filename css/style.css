@@ -1851,7 +1851,7 @@ Team CSS
 
 .single-team .team-image img {
     border: 3px solid #cdf1d8;
-    width: auto !important;
+    width: 131px !important;
     border-radius: 50%;
     display: inline-block !important;
     -webkit-transition: 0.5s;
@@ -2121,6 +2121,17 @@ Works CSS
 
 .vision .m-img img {
     display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .vision img {
+        display: none;
+    }
+    
+    .vision .m-img img {
+        display: block !important;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {

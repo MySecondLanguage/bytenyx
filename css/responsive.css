@@ -271,14 +271,6 @@
     .startp-nav nav .classTwo {
         display: block;
     }
-
-    .vision img {
-        display: none;
-    }
-    .vision .m-img img {
-        display: block !important;
-        margin: auto;
-    }
 }
 
 /* Min width 576px to Max width 677px */

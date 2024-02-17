@@ -2123,6 +2123,37 @@ Works CSS
     display: none !important;
 }
 
+
+/* video popup */
+
+.video-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.video-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 29px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    font-size: 1.5rem; 
+}
+
 @media screen and (max-width: 991px) {
     .vision img {
         display: none;
@@ -2138,10 +2169,22 @@ Works CSS
     .single-works {
         flex-basis: 45% !important;
     }
+    .close-btn {
+        top: 6%; /* Adjust positioning for smaller screens */
+    }
 }
 
 @media screen and (max-width: 600px) {
     .single-works {
         flex-basis: 95% !important;
+    }
+    .vemo-videos{
+        padding: 15% !important;
+    }
+    .close-btn {
+        top: 24%;
+        left: 76%;
+        padding: 3px !important;
+        right: 20%;
     }
 }

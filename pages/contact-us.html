@@ -108,35 +108,35 @@
           </div>
 
           <div class="col-lg-6 col-md-12">
-            <form class="contact-form">
+            <form class="contact-form" id="contact" onsubmit="return postToGoogle();">
               <div class="row">
                 <div class="col-lg-12 col-md-12">
                   <div class="form-group mb-3">
-                    <input type="text" name="name" placeholder="Your Name" class="form-control" />
+                    <input type="text" name="entry.200948583" placeholder="Your Name" class="form-control" />
                   </div>
                 </div>
 
                 <div class="col-lg-12 col-md-12">
                   <div class="form-group mb-3">
-                    <input type="text" name="email" placeholder="Your email address" class="form-control" />
+                    <input type="text" name="entry.241186046" placeholder="Your email address" class="form-control" />
                   </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6">
                   <div class="form-group mb-3">
-                    <input type="text" name="phone" placeholder="Your phone number" class="form-control" />
+                    <input type="text" name="entry.2138848393" placeholder="Your phone number" class="form-control" />
                   </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6">
                   <div class="form-group mb-3">
-                    <input type="text" name="subject" placeholder="Your Subject" class="form-control" />
+                    <input type="text" name="entry.714679314" placeholder="Your Subject" class="form-control" />
                   </div>
                 </div>
 
                 <div class="col-lg-12 col-md-12">
                   <div class="form-group">
-                    <textarea name="message" cols="30" rows="5" placeholder="Write your message..."
+                    <textarea name="entry.648220277" cols="30" rows="5" placeholder="Write your message..."
                       class="form-control"></textarea>
                   </div>
                 </div>
@@ -269,6 +269,36 @@
     </script>
 
   <script src="/js/script.js"></script>
+  <script>
+    function postToGoogle() {
+  var field1 = $("input[name='entry.200948583']").val();
+  var field2 = $("input[name='entry.241186046']").val();
+  var field3 = $("input[name='entry.2138848393']").val();
+  var field4 = $("input[name='entry.714679314']").val();
+  var field5 = $("textarea[name='entry.648220277']").val();
+
+  $.ajax({
+    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdspt9DD_DDzEvUXlTm8q5d_W_C-J_Uf3wMb4rlnc1ouQxb8w/formResponse",
+    data: {
+      "entry.200948583": field1,
+      "entry.241186046": field2,
+      "entry.2138848393": field3,
+      "entry.714679314": field4,
+      "entry.648220277": field5
+    },
+    type: "POST",
+    dataType: "xml",
+    success: function (d) {
+      $('#contact').trigger('reset');
+    },
+    error: function (x, y, z) {
+      $('#contact').trigger('reset');
+    }
+  });
+  return false;
+}
+
+  </script>
 
 </body>
 

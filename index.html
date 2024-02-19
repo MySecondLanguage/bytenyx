@@ -198,11 +198,12 @@
     <!-- Video Pop-up Container start -->
     <div id="video-popup" class="video-popup ">
       <div class="video-popup-content">
-        <video class="vemo-videos" controls autoplay muted loop>
+        <video class="vemo-videos" id="vemo-videos" muted autoplay playsinline>
           <source src="videos/videos.m4v" type="video/mp4">
         </video>
-        <button class="scroll-btn">
-          <img src="/images/scroll-down-icon.svg"/>
+        <button class="scroll-btn" id="scroll-btn">
+          
+          <img src="/images/scroll-down-icon.png"  width="30" height="50"/>
          
         </button>    
       </div>

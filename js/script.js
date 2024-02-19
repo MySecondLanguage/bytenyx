@@ -68,14 +68,72 @@ $(function () {
 
 // Video Apperaing
 
-$(document).ready(function () {
-  $("#video-popup").fadeIn();
+// $(document).ready(function () {
+//   var video = document.getElementById("vemo-videos");
+//   var isMouseMoved = false;
 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
-      $("#video-popup").fadeOut();
+//   $("#video-popup").fadeIn();
+
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() > 0) {
+//       $("#video-popup").fadeOut();
+//     } else {
+//       $("#video-popup").fadeIn();
+//     }
+//   });
+
+//   $(window).mousemove(function () {
+//     if (!isMouseMoved) {
+//       video.muted = false;
+//       video.play();
+//       isMouseMoved = true;
+//     }
+//   });
+
+//   $("#scroll-btn").click(function () {
+//     var offset = $(window).scrollTop() + 100;
+//     $("html, body").animate({ scrollTop: offset }, 200);
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("vemo-videos");
+
+  function unmuteVideo() {
+    video.muted = false;
+    video.play();
+
+    console.log(video.muted);
+  }
+
+  function muteVideo() {
+    video.play();
+    video.muted = true;
+
+    console.log(video.muted);
+  }
+
+  var videoPopup = document.getElementById("video-popup");
+  videoPopup.style.display = "block";
+  video.muted = false;
+  unmuteVideo();
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      videoPopup.style.display = "none";
+      muteVideo();
     } else {
-      $("#video-popup").fadeIn();
+      videoPopup.style.display = "block";
+      unmuteVideo();
     }
+  });
+
+  var scrollBtn = document.getElementById("scroll-btn");
+  scrollBtn.addEventListener("click", function () {
+    var offset = window.scrollY + 100;
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth",
+    });
   });
 });

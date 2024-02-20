@@ -210,10 +210,16 @@
         </button>    
       </div>
       <div>
-        <button class="position-absolute mute-unmute-button border-0 fs-3">
-          <i class="fa-solid fa-microphone unmute"></i>
-          <i class="fa-solid fa-microphone-slash mute d-none "></i>
-        </button>
+        <div class="mute-unmute-container">
+          <div class="unmuted toggle-sound"  href="#">
+              <div class="tooltip--left sound" data-tooltip="Turn On/Off Sound">
+                <div class="sound--icon fa fa-volume-off"></div>
+                <div class="sound--wave sound--wave_one"></div>
+                <div class="sound--wave sound--wave_two"></div>
+                <div class="sound--wave sound--wave_three"></div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
      <!-- Video Pop-up Container end -->

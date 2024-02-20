@@ -97,7 +97,6 @@ $(function () {
 // });
 
 
-
 // Video controller
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("vemo-videos");
@@ -130,17 +129,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // mute unmute toggler
-  document.querySelector('.mute-unmute-button').addEventListener('click', ()=>{
+  
+  
+  //Mute Toggle		
+  $(document).on('click', '.toggle-sound', function(e) {
+    $(this).toggleClass('sound-mute');
     video.muted = !video.muted;
-    if(video.muted){
-      document.querySelector('.mute').classList.add('d-none')
-      document.querySelector('.unmute').classList.remove('d-none')
-    }else{
-      document.querySelector('.mute').classList.remove('d-none')
-      document.querySelector('.unmute').classList.add('d-none')
-    }
-  })
+  });
+
+  // mute unmute toggler
+  // document.querySelector('.mute-unmute-button').addEventListener('click', ()=>{
+  //   video.muted = !video.muted;
+  //   if(video.muted){
+  //     document.querySelector('.mute').classList.add('d-none')
+  //     document.querySelector('.unmute').classList.remove('d-none')
+  //   }else{
+  //     document.querySelector('.mute').classList.remove('d-none')
+  //     document.querySelector('.unmute').classList.add('d-none')
+  //   }
+  // })
 
 
 });

@@ -96,39 +96,32 @@ $(function () {
 //   });
 // });
 
+
+
+// Video controller
 document.addEventListener("DOMContentLoaded", function () {
-  var video = document.getElementById("vemo-videos");
+  const video = document.getElementById("vemo-videos");
+  const videoPopup = document.getElementById("video-popup");
 
-  function unmuteVideo() {
-    video.muted = false;
-    video.play();
+  // Event listener for when the video is available to play
+  video.addEventListener("canplay", function () {
+    console.log("Video is available to play");
+    videoPopup.style.display = "block";
+  });
 
-    console.log(video.muted);
-  }
-
-  function muteVideo() {
-    video.play();
-    video.muted = true;
-
-    console.log(video.muted);
-  }
-
-  var videoPopup = document.getElementById("video-popup");
-  videoPopup.style.display = "block";
-  video.muted = false;
-  unmuteVideo();
-
+  // Event listener for when scoll is happend and it hide the video content
   window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
       videoPopup.style.display = "none";
-      muteVideo();
+      video.muted = true;
+      document.querySelector('.mute').classList.add('d-none')
+      document.querySelector('.unmute').classList.remove('d-none')
     } else {
       videoPopup.style.display = "block";
-      unmuteVideo();
     }
   });
 
-  var scrollBtn = document.getElementById("scroll-btn");
+  const scrollBtn = document.getElementById("scroll-btn");
   scrollBtn.addEventListener("click", function () {
     var offset = window.scrollY + 100;
     window.scrollTo({
@@ -136,4 +129,19 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   });
+
+  // mute unmute toggler
+  document.querySelector('.mute-unmute-button').addEventListener('click', ()=>{
+    video.muted = !video.muted;
+    if(video.muted){
+      document.querySelector('.mute').classList.add('d-none')
+      document.querySelector('.unmute').classList.remove('d-none')
+    }else{
+      document.querySelector('.mute').classList.remove('d-none')
+      document.querySelector('.unmute').classList.add('d-none')
+    }
+  })
+
+
 });
+

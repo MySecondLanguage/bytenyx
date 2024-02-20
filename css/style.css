@@ -2184,6 +2184,13 @@ Works CSS
   animation: scrollMotion 1.5s ease-in-out infinite alternate;
 }
 
+.mute-unmute-button{
+  right: 2vw;
+  bottom: 5vh;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 @keyframes scrollMotion {
   0% {
     transform: translateX(-50%) translateY(0);

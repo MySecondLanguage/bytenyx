@@ -2193,8 +2193,8 @@ Works CSS
 
 
 /* Mute-Unmute button start */
+
 .mute-unmute-container {
-  /* background-color: rgb(159, 188, 216); */
   position: fixed;
   width:100%;
   height:100%;
@@ -2208,33 +2208,27 @@ Works CSS
   }
 }
 
-
 .toggle-sound {
   position: fixed;
-  bottom: 12vh;
-	left: calc(50% + 60px);
-	background-color: #ffffff;
-	width: 55px;
-	height: 55px;
+  bottom: 114px;
+  left: 59%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  width: 55px;
+  height: 55px;
   line-height: 55px;
   text-align: center;
   color: black;
-	border-radius: 50%;
-	cursor: pointer;
-	z-index: 99;
-	animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-	box-shadow: 0 0 0 0 #F06292;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  box-shadow: 0 0 0 0 #F06292;
 }
 
 .toggle-sound.sound-mute {
 	box-shadow: none;
 }
-
-/* @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}} */
-
-
 .sound {
 	width: 103%;
 	height: 100%;
@@ -2314,6 +2308,12 @@ Works CSS
   }
 }
 
+@media screen and (min-width: 1440px) { 
+  .toggle-sound {
+    left: 55%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .vision img {
     display: none;
@@ -2323,11 +2323,19 @@ Works CSS
     display: block !important;
     margin: auto;
   }
+  .toggle-sound {
+    left: 61%;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
   .single-works {
     flex-basis: 45% !important;
+  }
+
+  .toggle-sound {
+    left: 63%;
   }
 }
 
@@ -2337,5 +2345,9 @@ Works CSS
   }
   .vemo-videos {
     object-fit: cover;
+  }
+
+  .toggle-sound {
+    left: 71%;
   }
 }

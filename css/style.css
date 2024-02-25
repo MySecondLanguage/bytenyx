@@ -2193,8 +2193,8 @@ Works CSS
 
 
 /* Mute-Unmute button start */
+
 .mute-unmute-container {
-  /* background-color: rgb(159, 188, 216); */
   position: fixed;
   width:100%;
   height:100%;
@@ -2208,11 +2208,10 @@ Works CSS
   }
 }
 
-
 .toggle-sound {
   position: fixed;
   bottom: 114px;
-  left: 55%;
+  left: 59%;
   transform: translateX(-50%);
   background-color: #ffffff;
   width: 55px;
@@ -2230,12 +2229,6 @@ Works CSS
 .toggle-sound.sound-mute {
 	box-shadow: none;
 }
-
-/* @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}} */
-
-
 .sound {
 	width: 103%;
 	height: 100%;
@@ -2317,7 +2310,7 @@ Works CSS
 
 @media screen and (min-width: 1440px) { 
   .toggle-sound {
-    left: 53%;
+    left: 55%;
   }
 }
 
@@ -2331,7 +2324,7 @@ Works CSS
     margin: auto;
   }
   .toggle-sound {
-    left: 57%;
+    left: 61%;
   }
   
 }
@@ -2342,7 +2335,7 @@ Works CSS
   }
 
   .toggle-sound {
-    left: 57%;
+    left: 63%;
   }
 }
 
@@ -2355,6 +2348,6 @@ Works CSS
   }
 
   .toggle-sound {
-    left: 62%;
+    left: 71%;
   }
 }

@@ -2294,6 +2294,31 @@ Works CSS
 
 }
 
+.video-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-nav li a {
+  font-weight: 500;
+  font-size: 15px;
+  color: #4a6f8a;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.video-nav li a:hover {
+  color: #20c997;
+}
+
+.nav-video-header{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 20px;
+}
+
 /* Mute-Unmute button start */
 
 @keyframes scrollMotion {

@@ -65,3 +65,18 @@ $(function () {
     },
   });
 });
+
+
+$(document).ready(function(){
+  $('#contact').click(function(event){
+      event.preventDefault(); // Prevent the default anchor behavior
+      var href = $(this).attr('href'); // Get the href attribute of the anchor
+      // Check if element with class 'calendly-badge-content' exists
+      if($('.calendly-badge-content').length) {
+          $('.calendly-badge-content').trigger('click');
+      } else {
+          // If class not found, redirect to the URL specified in the anchor tag's href attribute
+          window.location.href = href;
+      }
+  });
+});
